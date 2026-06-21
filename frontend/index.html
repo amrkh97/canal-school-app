@@ -2,10 +2,59 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="مدرسة القناة بالمعادي - نلتزم بالتميز التعليمي ورعاية أبنائنا الطلاب" />
-    <title>مدرسة القناة بالمعادي</title>
+    <link rel="icon" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="theme-color" content="#1e88e5" />
+
+    <!-- NOTE: if you move to a custom domain, update every https://canal-school-demo.onrender.com below -->
+    <title>مدرسة القناة بالمعادي | Maadi Canal School</title>
+    <meta
+      name="description"
+      content="مدرسة القناة بالمعادي — مدرسة لغات بالمعادي تضم رياض الأطفال والابتدائي والإعدادي والثانوي. تعرّف على المدرسة والقبول والمصروفات والأنشطة والأخبار. Maadi Canal School: a national language school in Maadi, Cairo, from kindergarten to secondary."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://canal-school-demo.onrender.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn link previews) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="مدرسة القناة بالمعادي" />
+    <meta property="og:title" content="مدرسة القناة بالمعادي | Maadi Canal School" />
+    <meta property="og:description" content="مدرسة لغات بالمعادي من رياض الأطفال حتى الثانوية — القبول والأنشطة والأخبار. A national language school in Maadi, Cairo." />
+    <meta property="og:url" content="https://canal-school-demo.onrender.com/" />
+    <meta property="og:image" content="https://canal-school-demo.onrender.com/hero.jpg" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="مدرسة القناة بالمعادي | Maadi Canal School" />
+    <meta name="twitter:description" content="مدرسة لغات بالمعادي من رياض الأطفال حتى الثانوية — القبول والأنشطة والأخبار." />
+    <meta name="twitter:image" content="https://canal-school-demo.onrender.com/hero.jpg" />
+
+    <!-- Structured data: tells Google this is a school (can power rich results) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "School",
+        "name": "مدرسة القناة بالمعادي",
+        "alternateName": "Maadi Canal School",
+        "description": "مدرسة لغات بالمعادي تضم رياض الأطفال والابتدائي والإعدادي والثانوي.",
+        "url": "https://canal-school-demo.onrender.com/",
+        "logo": "https://canal-school-demo.onrender.com/logo.png",
+        "image": "https://canal-school-demo.onrender.com/hero.jpg",
+        "telephone": "+20223584021",
+        "email": "canalschools2000@yahoo.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "22 ش 82، المعادى",
+          "addressLocality": "Maadi",
+          "addressRegion": "Cairo",
+          "addressCountry": "EG"
+        }
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +68,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Visible to crawlers before JS runs; the React app replaces it on load. -->
+    <noscript>
+      <h1>مدرسة القناة بالمعادي — Maadi Canal School</h1>
+      <p>مدرسة لغات بالمعادي تضم رياض الأطفال والابتدائي والإعدادي والثانوي. للتفعيل الكامل يرجى تشغيل JavaScript.</p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

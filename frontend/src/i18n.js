@@ -26,6 +26,9 @@ export const translations = {
     applySuccess: 'تم استلام طلبكم بنجاح. سيتواصل معكم فريق القبول قريباً.',
     addressLabel: 'الموقع', phoneLabel: 'الهاتف', emailLabel: 'البريد الإلكتروني',
     feesGrade: 'المرحلة', feesAmount: 'المصروفات', whatsapp: 'تواصل عبر واتساب',
+    disclaimerTitle: 'إخلاء مسؤولية',
+    disclaimer:
+      'هذا الموقع غير رسمي ولا يمثّل مدرسة القناة بالمعادي أو إدارتها وليس له أي صفة رسمية. وهو عمل شخصي قام به الطالب عمر خالد تعبيراً عن حبه وتقديره لمدرسته، ولأغراض تعليمية وعرض المهارات فقط. جميع الأسماء والشعارات والمحتوى تخص أصحابها، وقد تكون بعض البيانات (مثل الأرقام والمصروفات) توضيحية وغير دقيقة. للمعلومات الرسمية يُرجى التواصل مع المدرسة مباشرةً.',
   },
   en: {
     home: 'Home', about: 'About', stages: 'Stages', gallery: 'Gallery',
@@ -47,5 +50,8 @@ export const translations = {
     applySuccess: 'Your application has been received. Our admissions team will contact you soon.',
     addressLabel: 'Location', phoneLabel: 'Phone', emailLabel: 'Email',
     feesGrade: 'Stage', feesAmount: 'Fees', whatsapp: 'Chat on WhatsApp',
+    disclaimerTitle: 'Disclaimer',
+    disclaimer:
+      'This is an unofficial website and is not affiliated with, endorsed by, or representative of Maadi Canal School or its administration. It is a personal project created by student Omar Khaled as an expression of his love and appreciation for his school, for educational and portfolio purposes only. All names, logos, and content belong to their respective owners, and some data (such as figures and fees) may be illustrative and not accurate. For official information, please contact the school directly.',
   },
 };

@@ -83,6 +83,14 @@ export default function Footer({ site, contact, footer, schoolName, sections }) 
           </div>
         )}
 
+        {/* Static legal disclaimer — unofficial fan site (not admin-editable). */}
+        <div className="footer-disclaimer" role="note">
+          <strong>
+            <i className="fas fa-circle-info"></i> {t('disclaimerTitle')}
+          </strong>
+          <p>{t('disclaimer')}</p>
+        </div>
+
         <div className="footer-bottom">
           <p>{localized(footer, 'copyright', lang)}</p>
           <Link to="/admin/login" className="admin-link">

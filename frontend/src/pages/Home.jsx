@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { api } from '../api.js';
 import { useReveal } from '../hooks/useReveal.js';
 import { useUi, localized } from '../context/UiContext.jsx';
+import TopDisclaimer from '../components/TopDisclaimer.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Hero from '../components/Hero.jsx';
 import About from '../components/About.jsx';
@@ -97,6 +98,7 @@ export default function Home() {
 
   return (
     <>
+      <TopDisclaimer />
       <Navbar schoolName={schoolName} site={content.site} sections={ids} />
       <main>
         {ids.map((id) => (
