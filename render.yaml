@@ -1,0 +1,19 @@
+# One free Render web service that runs the WHOLE site (frontend + backend).
+# Data is NOT persisted (the free tier has no disk) — which is fine for a DEMO:
+# the backend re-seeds fresh content on every deploy/restart.
+# Deploy: push to GitHub, then on render.com → New → Blueprint → pick this repo.
+services:
+  - type: web
+    name: canal-school-demo
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true        # Render generates a strong secret
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: admin123            # change this before sharing widely
+      - key: CORS_ORIGIN
+        value: "*"

@@ -1,0 +1,9 @@
+# Keep the build context small + reproducible (deps are installed in the image).
+**/node_modules
+**/dist
+backend/data
+backend/uploads
+**/.git
+**/.remember
+**/.env
+*.log

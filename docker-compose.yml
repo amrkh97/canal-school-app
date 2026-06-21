@@ -1,0 +1,33 @@
+# Runs the whole site with one command:  docker compose up --build
+# Frontend (nginx) is exposed on http://localhost:8080
+services:
+  backend:
+    build: ./backend
+    container_name: canal-backend
+    restart: unless-stopped
+    environment:
+      PORT: 4000
+      JWT_SECRET: ${JWT_SECRET:-please-change-this-secret}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin123}
+      CORS_ORIGIN: "*"
+    volumes:
+      # Persist the database and uploaded images on the host so they
+      # survive container rebuilds.
+      - canal-data:/app/data
+      - canal-uploads:/app/uploads
+    expose:
+      - "4000"
+
+  frontend:
+    build: ./frontend
+    container_name: canal-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  canal-data:
+  canal-uploads:

@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# backend runtime data (database + uploaded images)
+backend/data/
+backend/uploads/
+backend/.env
+
+# build output
+frontend/dist/
+
+# misc
+*.log
+.DS_Store
+.env
+backend/.remember/
